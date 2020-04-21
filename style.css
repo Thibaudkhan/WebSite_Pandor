@@ -1,0 +1,117 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+html, body{
+	height: 100%;
+
+}
+
+body{
+	display: flex;
+
+}
+
+h1{
+    font-size: 5vw!important;	
+	color: white;
+	text-align: center;
+	padding-top: 30px;
+}
+
+h2{
+	text-align: center;
+	font-size: 1.1vw!important;
+}
+
+
+
+.blocLeft{
+	color: white;
+	background-image: url("images/capture.PNG");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	width: 75%;
+	height: 100%;
+
+}
+
+.blocLeft #date{
+	position: absolute;
+    background-color: #a2a1a1;
+    margin-top: -151px;
+    padding-left: 10px;
+    width: 200px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.marginRight{
+
+	
+	width: 25%;
+	height: 100%;
+	background-color: #dedede;
+}
+
+.marginRight h2{
+	padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 1px 9px black;
+    background-color: #c5c5c5;
+}
+.marginRight p {
+	padding-top: 10px;
+    margin-top: 15%;
+    background-color: white;
+    padding-bottom: 10px;
+    margin-left: -50px;
+    padding-left: 25px;
+}
+
+.marginRight input{
+	border: none;
+}
+
+.enfant{
+    margin-top: 25px;
+    margin-left: 38%;
+	display: none;
+}
+
+#bloc2{
+	margin-top: 25%;
+}
+
+#bloc1:focus-within .enfant{
+	display: block;
+}
+
+#bloc2:focus-within .enfant{
+	display: block;
+}
+
+
+.result h2{
+	color: white;
+
+}
+
+.resultName{
+	margin-top: 25%;
+}
+
+.result{
+    
+	display: flex;
+	justify-content:space-around;
+}
+
+.result p {
+	font-size: 3vw;
+}
+
+.blocPere{
+    margin-top: 59%;
+}
