@@ -1,5 +1,6 @@
 cookie_name = "CounterCookie";
 
+
 function doCookie(){
     if(document.cookie){
         index = document.cookie.indexOf(cookie_name);
@@ -26,11 +27,10 @@ function doCookie(){
         console.log(document.cookie.substring(countbegin, idBegin));
         count = eval(document.cookie.substring(countbegin, idBegin)) + 1;
         id = document.cookie.substring(idBegin, idEnd);
-        loadFile("visit_count.json", id, count);
         document.cookie = cookie_name + "=" + count + id + ";expires="+expires;
     }
     console.log(document.cookie);
-    document.getElementById("counter").innerHTML = "<b>You have been to my site "+getTimes()+" before. " + document.cookie + " </b>";
+    document.getElementById("counter").innerHTML = document.cookie ;
 }
 
 function getTimes(){
@@ -58,27 +58,3 @@ function getTimes(){
 
 }
 
-function loadFile(filePath, id, count) {
-    const fs = require('fs') 
-  
-    fs.readFile(filePath, (err, data) => { 
-        if (err) throw err; 
-  
-        console.log(data.toString()); 
-    }) 
-}
- /*   var result = null;
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", filePath, false);
-    xmlhttp.send();
-    if (xmlhttp.status==200) {
-       jsonArr = JSON.parse(xhr.responseText);
-
-       jsonArr.push({"id": id, "count": count});
-
-       xhr.open("POST", jsonRequestURL, true);
-       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");};
-       xhr.send("jsonTxt="+JSON.stringify(jsonArr));
-    }
-    return result;
-}*/
