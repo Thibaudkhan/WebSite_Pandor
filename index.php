@@ -1,3 +1,4 @@
+<?php echo "lol";?>
 <!doctype html>
 <html lang="en">
   <head>
