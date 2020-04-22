@@ -12,8 +12,8 @@ function doCookie(){
     var expires = "Thursday, 21-May-2020 20:00:00 UTC+2";
 
     if(index == -1){
-        
         document.cookie = cookie_name + "=1_" + Math.random().toString(36).substr(2, 9) +"; expires =" + expires;
+        location.reload();
     }
 
     else {
@@ -31,6 +31,7 @@ function doCookie(){
     }
     console.log(document.cookie);
     document.getElementById("counter").innerHTML = document.cookie ;
+
 }
 
 function getTimes(){
