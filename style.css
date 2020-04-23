@@ -7,7 +7,7 @@ html, body{
 
 }
 
-body{
+.blocHome{
 	display: flex;
 
 }
@@ -24,7 +24,29 @@ h2{
 	font-size: 1.1vw!important;
 }
 
+.newsletter{
+	padding-top: 30px;
+}
 
+.newsletter form{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.newsletter h3{
+	font-size: 1.5vw!important;
+	text-align: center;
+}
+
+.newsletter h4{
+	font-size: 1.5vw!important;
+
+	text-align: center;
+}
+
+.newsletter h2{
+	font-size: 2vw!important;
+}
 
 .blocLeft{
 	background-color: #252525;
@@ -49,10 +71,7 @@ h2{
 }
 
 .marginRight{
-
-	
 	width: 25%;
-	height: 100%;
 	background-color: #dedede;
 }
 
